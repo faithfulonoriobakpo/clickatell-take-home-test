@@ -1,12 +1,13 @@
-import ActivityList from "./components/ActivityList";
+import ActivityList from "./components/activity-list/ActivityList";
 import { ActivityProvider } from "./provider/ActivityProvider";
+import "./App.scss";
 
 const App = () => {
   
   return (
     <ActivityProvider>
       <div>
-        <h1>Live Activity Tracker</h1>
+        <h1 className="header">Live Activity Tracker</h1>
         <ActivityList />
       </div>
     </ActivityProvider>

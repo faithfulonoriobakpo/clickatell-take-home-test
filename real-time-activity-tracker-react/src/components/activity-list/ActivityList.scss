@@ -1,0 +1,21 @@
+.activity-list {
+    padding: 20px;
+
+    .search-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.activities {
+        margin-top: 30px;
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            border-bottom: 1px solid grey;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    }
+}

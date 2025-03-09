@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { useDebounce } from "../hooks/useDebounce";
+import { useDebounce } from "../../hooks/useDebounce";
+import './SearchBar.scss';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;

@@ -52,12 +52,16 @@ const randomActivity = () => {
   }
 };
 
+let activityCount = 0;
+
 function sendRandomActivity(){
-  setInterval(() => {
+  const randomActivityInterval = setInterval(() => {
     const activity = randomActivity();
 
+    activityCount++;
     // Broadcast to all clients
     io.emit("activity", activity);
+    // if(activityCount >= 5) clearInterval(randomActivityInterval);
   }, 5000);
 }
 
