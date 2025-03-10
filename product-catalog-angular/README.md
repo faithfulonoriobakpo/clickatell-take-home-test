@@ -1,59 +1,40 @@
-# ProductCatalogAngular
+# Product Catalog Angular
+==========================
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+## Table of Contents
+-----------------
 
-## Development server
+1. [Steps to Run the Application](#steps-to-run-the-application)
+2. [Assumptions Made During Development](#assumptions-made-during-development)
+3. [Areas for Improvement](#areas-for-improvement)
 
-To start a local development server, run:
+## Steps to Run the Application
+-----------------------------
 
-```bash
-ng serve
-```
+To run the Product Catalog Angular application, follow these steps:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+1. Clone the repository to your local machine.
+2. Navigate product-catalog-angular.
+3. Install the required dependencies by running `npm install` in the terminal.
+4. Start the application by running `ng serve` in the terminal.
+5. Open a web browser and navigate to `http://localhost:4200` to view the application.
 
-## Code scaffolding
+## Assumptions Made During Development
+--------------------------------------
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+During development, the following assumptions were made:
 
-```bash
-ng generate component component-name
-```
+* The application will be used to display a catalog of products.
+* The products will be retrieved from a backend API
+* The application will have basic filtering and sorting functionality.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```bash
-ng generate --help
-```
+## Areas for Improvement
+-------------------------
 
-## Building
+Given more time, the following areas could be improved:
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* **Product Details Page**: Create a separate page to display detailed information about each product.
+* **Better Design**: Improve the application's design to ensure a better user experience.
+* **Error Handling**: Implement error handling to handle cases where the backend API is unavailable or returns an error.
+* **Unit Tests and End-to-End Tests**: Write unit tests and end-to-end tests to ensure the application's functionality and stability.
