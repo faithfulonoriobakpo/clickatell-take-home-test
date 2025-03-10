@@ -35,6 +35,7 @@ During development, the following assumptions were made:
 Given more time, the following areas could be improved:
 
 * **Product Details Page**: Create a separate page to display detailed information about each product.
+* **Pagination**: Paginate data.
 * **Better Design**: Improve the application's design to ensure a better user experience.
 * **Error Handling**: Implement error handling to handle cases where the backend API is unavailable or returns an error.
 * **Unit Tests and End-to-End Tests**: Write unit tests and end-to-end tests to ensure the application's functionality and stability.

@@ -1,54 +1,40 @@
-# React + TypeScript + Vite
+# Real-Time Activity Tracker React
+==========================
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of Contents
+-----------------
 
-Currently, two official plugins are available:
+1. [Steps to Run the Application](#steps-to-run-the-application)
+2. [Assumptions Made During Development](#assumptions-made-during-development)
+3. [Areas for Improvement](#areas-for-improvement)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Steps to Run the Application
+-----------------------------
 
-## Expanding the ESLint configuration
+To run the Real-Time Activity Tracker React application, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. Clone the repository to your local machine.
+2. Navigate to real-time-activity-tracker
+3. Install the required dependencies by running `npm install` in the terminal.
+4. Start the application by running `npm start` in the terminal.
+5. Open a web browser and navigate to `http://localhost:5173` to view the application.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Assumptions Made During Development
+--------------------------------------
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+During development, the following assumptions were made:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* The application will be used to track real-time activity data via a websocket connection.
+* The activity data will be displayed in a list.
+* The application will have real-time updates, with new data being added to the display as it becomes available.
+* The application will be built using React and will utilize WebSockets for real-time updates.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Areas for Improvement
+-------------------------
+
+Given more time, the following areas could be improved:
+
+* **Pagination**: Paginate real time activity data.
+* **Better Design**: Better UI design.
+* **Unit Tests and End-to-End Tests**: Write more unit tests and end-to-end tests to ensure the application's functionality and stability.
+* **Error Handling**: Better error handling
