@@ -61,7 +61,7 @@ function sendRandomActivity(){
     activityCount++;
     // Broadcast to all clients
     io.emit("activity", activity);
-    // if(activityCount >= 5) clearInterval(randomActivityInterval);
+    if(activityCount >= 10) clearInterval(randomActivityInterval);
   }, 5000);
 }
 
