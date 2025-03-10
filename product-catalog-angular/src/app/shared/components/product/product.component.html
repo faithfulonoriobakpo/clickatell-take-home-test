@@ -1,0 +1,13 @@
+<div class="product">
+    <div class="image">
+        <img [src]="product.images[0]" [alt]="product.title">
+    </div>
+    <div class="description">
+        <p class="category">{{product.category.name}}</p>
+        <p class="name">{{product.title}}</p>
+        <div class="product-footer">
+            <div class="rating"><i class="fa fa-star"></i><span>1205</span></div>
+            <span class="price">${{product.price.toFixed(2)}}</span>
+        </div>
+    </div>
+</div>

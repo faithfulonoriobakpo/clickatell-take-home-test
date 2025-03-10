@@ -1,0 +1,9 @@
+<div id="product-list-container">
+    <div id="product-list">
+        @for(product of products(); let i = $index; track i;){
+            <div class="product-list-item">
+                <app-product [product]="product"></app-product>
+            </div>
+        }
+    </div>
+</div>
